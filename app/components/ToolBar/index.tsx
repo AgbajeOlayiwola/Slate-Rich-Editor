@@ -1,9 +1,7 @@
 import { Button, Dropdown, DropdownButton } from "react-bootstrap";
 import {
   getActiveStyles,
-  getTextBlockStyle,
   isLinkNodeAtSelection,
-  toggleBlockType,
   toggleStyle,
 } from "../../utils/EditorUtils";
 import { useSlateStatic } from "slate-react";
@@ -36,17 +34,7 @@ export default function Toolbar({
   previousSelection: any;
 }) {
   const editor = useSlateStatic();
-  const onBlockTypeChange = useCallback(
-    (targetType: any) => {
-      if (targetType === "multiple") {
-        return;
-      }
-      toggleBlockType(editor, targetType);
-    },
-    [editor]
-  );
 
-  const blockType = getTextBlockStyle(editor);
   return (
     <div className="toolbar">
       {/* Dropdown for paragraph styles */}
