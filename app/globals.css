@@ -105,3 +105,29 @@ a {
     color-scheme: dark;
   }
 }
+.toolbar{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.toolbar div{
+  background-color: blue;
+  padding: 10px;
+}
+.toolbar button{
+  background-color: blue;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+.Slate-div div:nth-child(2){
+  width: 80vw;
+  height: 90vh;
+}
+button{
+  cursor: pointer;
+}
+a{
+  color: blue;
+}

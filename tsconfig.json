@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Slate/index.tsx", "app/components/ToolBar/index.tsx", "app/utils/EditorUtils.js"],
   "exclude": ["node_modules"]
 }
